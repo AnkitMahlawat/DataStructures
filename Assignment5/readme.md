@@ -12,7 +12,7 @@ Your algorithm should be as efficient as possible.
 
 Sample input file
 
-=====================================================================
+=====================================================================  
 7 # no of cities
 15 # no of lines with information of one flight in each line.
 
