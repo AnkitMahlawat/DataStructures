@@ -13,14 +13,14 @@ Your algorithm should be as efficient as possible.
 Sample input file
 
 =====================================================================  
-7 # no of cities
+7 # no of cities  
 15 # no of lines with information of one flight in each line.
 
 2 5 1026 1234 AI324 6234 # says that flight AI324 leaves from city 2 at 1026 and reaches city 5 at 1234 and costs Rs 6234
 
 3 7 1221 1456 TG342 543
 
-... # 113 more lines
+... # 113 more lines  
 10 # no of queries to follow, one in each line
 
 3 6 0245 1735 # compute the cheapest trip from city 3 to city 6 which starts after 0245hrs and arrives before 1735. 
