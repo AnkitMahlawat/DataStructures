@@ -19,5 +19,6 @@ If the current number of distinct salaries in the company is 𝑛, queries 𝐴,
 than 𝑂(𝑙𝑜𝑔 𝑛) time. All the salaries are integers in the range [1, 10<sup>6</sup>]. You should initialize the
 database by reading salaries from a file. The first line of the file is an integer which specifies the
 number of data points. Subsequent lines contain the salaries (one on each line).  
+
 The test cases will consist of a sequence of the operations, A, R, Q, Max, Min and after each
 operation you should report the relevant information.
