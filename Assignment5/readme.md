@@ -25,12 +25,12 @@ Sample input file
 
 3 6 0245 1735 # compute the cheapest trip from city 3 to city 6 which starts after 0245hrs and arrives before 1735.   
 .... # 9 more queries  
-\================================================================================
-Output format  
+\================================================================================  
+### Output format  
 For each query output the price of the cheapest trip (one number only) on one line. 
 
-Example output  
-\=================================================================================
+### Example output  
+\=================================================================================  
 34526  
 34784   
 73267  
