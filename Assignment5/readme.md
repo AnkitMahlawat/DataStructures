@@ -10,7 +10,7 @@ The query that you have to answer is: given two cities "A" and "B", times "t1", 
 Your algorithm should be as efficient as possible.
 
 
-Sample input file
+### Sample input file
 
 =====================================================================  
 7 # no of cities  
