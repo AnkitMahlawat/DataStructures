@@ -32,7 +32,6 @@ public:
 	void printFlight(){
 		cout<<from<<" "<<to<<" "<<Dtime<<" "<<Atime<<" "<<plane<<" "<<price<<endl;
 	}
-
 };
 
 
