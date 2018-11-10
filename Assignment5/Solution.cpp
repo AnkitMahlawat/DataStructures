@@ -111,6 +111,17 @@ public:
     void set_ptr(node* ptr){
         link=ptr;
     }
+    
+    void print(){
+        if(valid==true){
+            cout<<"new link: ";
+            f.printFlight();
+            cout<<Tprice<<" "<<valid<<" "<<link<<endl;
+        }
+        if(link!=nullptr){
+            link->print();
+        }
+    }
 };
 
 class a_list{
@@ -180,6 +191,13 @@ public:
                     
 
         return;
+    }
+    
+    void print(){
+        for (int i = 0; i < size; i++) {
+            cout<<i<<": ";
+            a[i].print();
+        }
     }
 
 };
@@ -331,7 +349,9 @@ void fun_tripPlanner(int start_city,int end_city,int Dep_time,int Arr_time,heap 
 	arr_list.add(start_city,src);
 	while(temp.getMin().get_Deptime()<Arr_time&&!temp.isEmpty()){
 	    flight current=temp.deleteMin();
-	    if(current.get_Deptime()>Dep_time&&current.get_Arrtime()<Arr_time){
+	   // cout<<"-------------------------------------------------------------"<<endl;
+	   // current.printFlight();
+	    if(current.get_Deptime()>=Dep_time&&current.get_Arrtime()<=Arr_time){
             node from_node=arr_list.get_i(current.get_from());
             if(from_node.get_valid()){
                 int ptr_price;
@@ -341,6 +361,7 @@ void fun_tripPlanner(int start_city,int end_city,int Dep_time,int Arr_time,heap 
                 }
             }
 	    }
+	   // arr_list.print();
 	}
 	
 	if(arr_list.get_i(end_city).get_valid()){
